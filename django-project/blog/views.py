@@ -9,7 +9,7 @@ def blog_index(request):
     context = {
         "posts": posts,
     }
-    return render(request, "blog_index.html", context)
+    return render(request, "blog/blog_index.html", context)
 
 def blog_category(request, category):
     posts = Post.objects.filter(

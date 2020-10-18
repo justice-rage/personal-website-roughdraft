@@ -21,7 +21,7 @@ def blog_category(request, category):
         "category": category,
         "posts": posts
     }
-    return render(request, "blog_category.html", context)
+    return render(request, "blog/blog_category.html", context)
 
 def blog_detail(request, pk):
     post = Post.objects.get(pk=pk)
@@ -44,4 +44,4 @@ def blog_detail(request, pk):
         "form": form,
     }
 
-    return render(request, "blog_detail.html", context)
+    return render(request, "blog/blog_detail.html", context)

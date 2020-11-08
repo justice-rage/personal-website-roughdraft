@@ -40,7 +40,6 @@ INSTALLED_APPS = [
     # developer installed apps
     'projects',
     'blog',
-    'about_me'
 ]
 
 MIDDLEWARE = [

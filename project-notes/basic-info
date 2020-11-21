@@ -1,3 +1,4 @@
 Python Version: 3.9
 Directory: django-project
 Virtual Environment: venv
+Bootstrap Version: bootstrap-5.0.0-alpha

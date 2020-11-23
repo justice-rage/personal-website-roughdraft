@@ -3,29 +3,14 @@
 {% block content %}
 
 <main role="main">
-    <!-- Profile Picture -->
-    <div class="left-column">
-        <img class="img-thumbnail" src="{% static 'images/jpd_2019.png' %}"
-        width="200">
-    </div>
-    <!-- About Section -->
-    <div class="right-column">
-        <h1>About me</h1>
-        <p>Philosophy nut that stumbled upon programming. I have moved many times, having lived on the West-coast, the 
-        South, and the East-coast. I believe being comfortable in not knowing, being wrong, and pursuing intelligent
-        failure is paramount to effective creation, innovation, leadership, and lifelong learning. As the complexity
-        of our reality increases, so do our problems and the needed solutions. Therefore, my aim as a young professional 
-        is to harness the critical thinking skills developed throughout my life, so that I am adaptable and able to 
-        tackle the ever-growing problems our world faces and acquire the skills required to overcome them. Because 
-        we can no longer afford to think outside the box, we must break the box. </p>
-    </div>
+
     <!-- Project Section -->
-    <div class="container">
-        <h1>Projects</h1>
+    <div class="jumbotron container">
+        <h1 class="text-center">Projects</h1>
         <div class="row">
         {% for project in projects %}
-            <div class="col-md-4">
-                <div class="card mb-2">
+            <div class="col-md-4 border">
+                <div class="card mb-2 mt-2">
                     <img class="card-img-top" src="{% static project.image %}" alt="{{ project.description }}">
                     <div class="card-body">
                         <h5 class="card-title">{{ project.title }}</h5>
@@ -37,6 +22,7 @@
         {% endfor %}
         </div>
     </div>
+    
 </main>
 
 

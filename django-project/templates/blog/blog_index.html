@@ -4,6 +4,7 @@
 <main role="main">
     <div class="jumbotron container">
         <h1 class="text-center">Blog</h1>
+        <hr>
         {% for post in posts %}
         <h2><a href="{% url 'blog:blog_detail' post.pk%}" class="text-dark">{{ post.title }}</a></h2>
         <small>
@@ -16,6 +17,7 @@
             {% endfor %}
         </small>
         <p>{{ post.body | slice:":400" }}...</p>
+        <hr>
         {% endfor %}
     </div>
 </main>

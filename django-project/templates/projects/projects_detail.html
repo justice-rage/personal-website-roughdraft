@@ -3,19 +3,24 @@
 {% load static %}
 
 {% block content %}
+<!--Introduction-->
 <main role="main">
-    <h1>{{ project.title }}</h1>
-    <div class="row">
-        <div class="col-md-8">
-            <img src="{% static project.image %}" alt="{{ project.description }}" width="100%">
+    <section class="text-center">
+        <div class="container">
+            <!--Project Picture-->
+            <div class="text-center">
+                <img src="{% static project.image %}" alt="{{ project.description }}" width="75%">
+            </div>
+            <!--//Project Picture-->
+            <h1>{{ project.title }}</h1>
+            <div>
+                <p class="lead text-muted">{{ project.technology }}</p>
+                <hr>
+                <h5>About the project</h5>
+                <p>{{ project.description }}</p>
+            </div>
         </div>
-        <div class="col-md-4">
-            <h5>About the project</h5>
-            <p>{{ project.description }}</p>
-            <h5>Built with:</h5>
-            <p>{{ project.technology }}</p>
-        </div>
-    </div>
+    </section>
 </main>
-
+  <!--Introduction-->
 {% endblock %}

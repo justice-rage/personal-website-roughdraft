@@ -2,3 +2,6 @@ Python Version: 3.9
 Directory: django-project
 Virtual Environment: venv
 Bootstrap Version: bootstrap-5.0.0-alpha
+
+Bootstrap Colors:
+1) Dark #343a40

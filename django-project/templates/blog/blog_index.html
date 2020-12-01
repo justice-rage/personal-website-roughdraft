@@ -2,7 +2,8 @@
 {% block content %}
 
 <main role="main">
-    <div class="jumbotron container">
+
+    <div class="jumbotron container" style="background-color: grey">
         <h1 class="text-center">Blog</h1>
         <hr>
         {% for post in posts %}
@@ -20,6 +21,7 @@
         <hr>
         {% endfor %}
     </div>
+    
 </main>
 
 {% endblock %}

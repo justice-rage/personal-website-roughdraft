@@ -2,12 +2,14 @@
 {% load static %}
 {% block content %}
 
+<!-- Personal CSS file -->
+<link rel="stylesheet" href="{% static 'css/projects_index.css' %}">
+
 <main role="main">
 
     <!-- Project Section -->
-    <div class="jumbotron container">
+    <div class="container">
         <h1 class="text-center">Projects</h1>
-        <hr>
         <div class="row">
         {% for project in projects %}
             <div class="col-md-4">

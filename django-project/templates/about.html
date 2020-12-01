@@ -2,6 +2,12 @@
 {% load static %}
 {% block content %}
 
+<head>
+<!-- Personal CSS file -->
+<link rel="stylesheet" href="{% static 'css/about.css' %}">
+</head>
+
+<div class="container" style="max-width: 42em;">
 <main role="main" class="inner cover">
   <!--Profile Picture-->
   <div class="text-center">
@@ -9,7 +15,7 @@
 </div>
 <!--//Profile Picture-->
   <h1 class="cover-heading">Justice Douglas</h1>
-  <p class="lead text-muted">Philosophy nut that stumbled upon programming.</p>
+  <p class="lead text" style="color: rgba(255, 255, 255, .5);">Philosophy nut that stumbled upon programming.</p>
   <p class="lead">An imaginative and strategic knowledge seeker with experience leading 
     and collaborating with high-performace teams seeking to break into
     the tech industry.</p>
@@ -20,11 +26,12 @@
     <!--//Get In Touch-->
     <!--Social Proof Buttons-->
     <div class="container my-2">
-      <a class="nav-item fab fa-github-square fa-2x" href="https://github.com/mr-justice" target="_blank" style="color: #ffffff"></a>
-      <a class="nav-item fab fa-linkedin fa-2x" href="https://www.linkedin.com/in/justicedouglas/" target="_blank" style="color: #ffffff"></a>
+      <a class="nav-item fab fa-github-square fa-2x" href="https://github.com/mr-justice" target="_blank"></a>
+      <a class="nav-item fab fa-linkedin fa-2x" href="https://www.linkedin.com/in/justicedouglas/" target="_blank"></a>
     </div>
     <!--//Social Proof Buttons-->
   </p>
 </main>
+</div>
 
 {% endblock %}

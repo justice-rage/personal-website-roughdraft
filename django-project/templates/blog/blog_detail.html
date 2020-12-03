@@ -2,8 +2,8 @@
 {% block content %}
 
 <main role="main">
-    <div class="jumbotron col-md-8 offset-md-2">
-        <h1 style="color: black;">{{ post.title }}</h1>
+    <div class="jumbotron col-md-8 offset-md-2 text-left">
+        <h1 style="color: white;">{{ post.title }}</h1>
         <small>
             {{ post.created_on.date }} |&nbsp;
             Categories:&nbsp;
@@ -13,7 +13,9 @@
             </a>&nbsp;
             {% endfor %}
         </small>
+        <hr style="background-color: white;">
         <p>{{ post.body | linebreaks }}</p>
+        <hr style="background-color: white;">
         <h3>Leave a comment:</h3>
         <form action="/blog/{{ post.pk }}/" method="post">
             {% csrf_token %}
@@ -23,8 +25,9 @@
             <div class="form-group">
                 {{ form.body }}
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary" style="background-color: #1b1b1d; border: 0;">Submit</button>
         </form>
+        <hr style="background-color: white;">
         <h3>Comments:</h3>
         {% for comment in comments %}
         <p>

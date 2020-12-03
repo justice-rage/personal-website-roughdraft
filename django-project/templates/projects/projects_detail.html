@@ -15,9 +15,16 @@
             <div class="text-left">
                 <h1>{{ project.title }}</h1>
                 <div>
-                    <p class="lead text" style="color: rgba(255, 255, 255, .5);">{{ project.technology }}</p>
+                    <p class="lead text" style="color: rgba(255, 255, 255, .5);">
+                        Technology:&nbsp;
+                        {% for technology in project.technology.all %}
+                        <a href="{% url 'projects:project_technology' technology.name %}">
+                            {{ technology.name }}
+                        </a>&nbsp;
+                        {% endfor %}
+                    </p>
                     <hr style="background-color: white;">
-                    <p>{{ project.description }}</p>
+                    <p>{{ project.body|linebreaks }}</p>
                 </div>
             </div>
     </section>

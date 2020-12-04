@@ -64,11 +64,11 @@ $("#nav-bar a").click(function () {
 
     $(".active").removeClass("active");
     $(id).addClass("active");
-    localStorage.setItem("selectedolditem", $(id).text());
+    sessionStorage.setItem("selectedolditem", $(id).text());
 
 });
 
-var selectedolditem = localStorage.getItem('selectedolditem');
+var selectedolditem = sessionStorage.getItem('selectedolditem');
 
 if (selectedolditem !== null) {
 

@@ -4,7 +4,7 @@
 <main role="main">
     <div class="container text-left">
         <div class="jumbotron col-md-8 offset-md-2">
-            <h1 class="text-center">{{ category | title }}</h1>
+            <h1 class="lead text text-center">Category: {{ category | title }}</h1>
             <hr>
             {% for post in posts %}
                 <h2><a href="{% url 'blog:blog_detail' post.pk%}">{{ post.title }}</a></h2>

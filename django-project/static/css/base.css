@@ -109,10 +109,17 @@ body {
 }
 
 .card-img-top {
-  width: 100%;
+  width: auto;
   height: 15vw;
   object-fit: cover;
 }
+
+@media screen and (max-width: 575px) {
+  .card-img-top {
+    width: auto;
+    height: 50vw;
+    object-fit: cover;
+  }
 
 .img {
   width: 50%;

@@ -9,7 +9,7 @@
 
     <!-- Project Section -->
     <div class="container">
-        <h1>{{ technology | title }}</h1>
+        <h1 class="lead text">Technology: {{ technology | title }}</h1>
         <div class="row">
         {% for project in projects %}
             <div class="col-md-4">
@@ -20,7 +20,7 @@
                         <hr style="background-color: white;">
                         <p class="card-text white-text mb-4 text-left">{{ project.description }}</p>
                         <!--Read More/Link Button-->
-                        <a href="{% url 'projects:project_detail' project.pk %}">
+                        <a class="sub-nav" href="{% url 'projects:project_detail' project.pk %}">
                         <button class="btn btn-primary float-right" style="background-color: #1b1b1d; border: 0;">
                         <h5 class="float-right" style="color: white;">Inquire <i class="fas fa-angle-double-right"></i></h5></button></a>
                     </div>

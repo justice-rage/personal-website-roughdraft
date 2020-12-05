@@ -15,10 +15,10 @@
             <div class="text-left">
                 <h1>{{ project.title }}</h1>
                 <div>
-                    <p class="lead text" style="color: rgba(255, 255, 255, .5);">
+                    <p class="lead text" style="color: white;">
                         Technology:&nbsp;
                         {% for technology in project.technology.all %}
-                        <a href="{% url 'projects:project_technology' technology.name %}">
+                        <a id="project-detail" class="sub-nav" href="{% url 'projects:project_technology' technology.name %}" style="color: white;">
                             {{ technology.name }}
                         </a>&nbsp;
                         {% endfor %}

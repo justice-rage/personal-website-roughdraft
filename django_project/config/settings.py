@@ -125,7 +125,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-MEDIA_URL = '/images/'
+MEDIA_URL = '/img/'
 
 # Developer added: Static settings
 STATICFILES_DIRS = [

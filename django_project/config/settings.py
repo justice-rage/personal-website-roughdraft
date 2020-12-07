@@ -91,9 +91,9 @@ DATABASES ={
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'justice_website',
-        'USER': 'postgres',
+        'USER': 'justice',
         'PASSWORD': 'SilenceGrows1!',
-        'HOST': 'localhost',
+        'HOST': 'justice-website.cj4dmxf4araj.us-east-2.rds.amazonaws.com',
         'PORT': '5432',
     }
 }

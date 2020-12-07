@@ -1,7 +1,8 @@
 Python Version: 3.9
-Directory: django-project
+Directory: django_project
 Virtual Environment: venv
-Bootstrap Version: bootstrap-5.0.0-alpha
+Bootstrap Version: bootstrap 4.5.3
+Database: postgresql
 
 Bootstrap Colors:
 1) Dark #343a40
